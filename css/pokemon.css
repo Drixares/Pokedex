@@ -393,7 +393,7 @@ footer {
 }
 
 #btnMore {
-    font-size: var(--font-size-para-important);
+    font-size: var(--font-size-para);
     padding: 15px 10px;
     background-color: var(--secondary-color);
     color: var(--fond-text-color);
