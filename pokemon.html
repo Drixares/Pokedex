@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/pokemon.css">
+    <script src="https://kit.fontawesome.com/d3a9f97c9c.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <!-- <script src="js/page.js" defer></script> -->
+    <script src="js/test.js" defer></script>
+    <script src="js/filter.js" defer></script>
+    <title>The Pokedex - All pokemons</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="icon arrow"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="input-control">      
+                <input type="text" id="search" placeholder="Search a Pokemon" autocomplete="off">
+                <label for="search" id="searchLabel"><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+        </nav>
+
+        <main>
+            <div class="box-title">
+                <div class="title-filter">
+                    <h2 class="title">Pokemons</h2>
+                    <button class="filter filter-off" id="filter-btn">
+                        Filter
+                        <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path id="XMLID_224_"
+                                    d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="G-btn showfilters" id="box-filters">
+                    <button class="filter-generation active-btn" data-gen="first">First Generation</button>
+                    <button class="filter-generation" data-gen="second">Second Generation</button>
+                    <button class="filter-generation" data-gen="third">Third Generation</button>
+                    <button class="filter-generation" data-gen="fourth">Fourth Generation</button>
+                    <button class="filter-generation" data-gen="fifth">Fifth Generation</button>
+                    <button class="filter-generation" data-gen="sixth">Sixth Generation</button>
+                    <button class="filter-generation" data-gen="seventh">Seventh Generation</button>
+                    <button class="filter-generation" data-gen="eight">Eight Generation</button>
+                    <button class="filter-generation" data-gen="ninth">Ninth Generation</button>
+                </div>
+            </div>
+
+            <div class="box-cards" id="box-cards">
+
+            </div>
+
+            <div id="box-error">
+            
+            </div>
+
+            <div class="boxBtnMore">
+                <button id="btnMore">See more</button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="box-copyright">
+              <img src="ressources/img/logoPokemon.png" alt="Logo Pokemon" class="logo-pokemon">
+              <span class="copyright">&#169;Copyright</span>
+            </div>
+      
+            <div class="box-text-use">
+              <p>This project is a personal use for an educational work.</p>
+            </div>
+      
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
