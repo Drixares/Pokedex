@@ -17,7 +17,6 @@
     --font-size-pokemon-name: calc(18px + 1.4vw);
     --font-size-pokemon-number: calc(16px + 1vw);
     --font-size-pokemon-type: calc(14px + .4vw) ; 
- 
 }
 
 * {
@@ -58,7 +57,7 @@ nav {
 .input-control {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     padding: 10px 15px;
     gap: 20px;
     width: 300px;
@@ -406,11 +405,27 @@ footer {
     background-color: #3b3b3b;
 }
 
-#searchLabel {
+#searchBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    background-color: whitesmoke;
+    width: 50px;
+    height: 40px;
+    border-radius: 100vw;
+    border: none;
 }
 
-#searchLabel:hover > i {
-    color: #b3b3b3;
+#searchBtn > i {
+    font-size: 16px;
+}
+
+#searchBtn:hover {
+    background-color: rgb(18, 112, 1);
+}
+
+#searchBtn:hover > i {
+    color: var(--fond-text-color);
 }
 
