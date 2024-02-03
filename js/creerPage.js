@@ -38,7 +38,7 @@ async function getPokemon() {
                 </div>
                 <span class="number">#${pokemon.id}</span>
                 <div class="box-description">
-                    <p>${pokemonDesc.flavor_text_entries[0].flavor_text}</p>
+                    <p>${pokemonDesc.flavor_text_entries[0]?.flavor_text ? pokemonDesc.flavor_text_entries[0].flavor_text : "Description non disponible..."}</p>
                 </div>
             </div>
 
@@ -94,7 +94,7 @@ async function getPokemon() {
             </div>
         </div>
         <div class="main-box-right">
-            <img src="${pokemon.sprites.other['official-artwork'].front_default}" alt="" class="img-pokemon">
+            <img src="${pokemon.sprites.other['official-artwork'].front_default}" alt="Image Pokemon : ${pokemon.name}" class="img-pokemon">
         </div>
 
     </main>
